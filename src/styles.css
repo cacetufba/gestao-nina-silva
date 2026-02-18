@@ -1,3 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 @import "tailwindcss";
+
+@theme {
+  --font-open: "Open Sans", sans-serif;
+  --color-dark: #610FB0;
+  --color-medium: #A06FD0;
+  --color-clear: #D0B7E7;
+  --color-blue: #0074B8;
+  --color-blue-clear: #34B1FB 
+}
