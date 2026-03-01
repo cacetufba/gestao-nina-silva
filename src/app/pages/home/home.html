@@ -2,10 +2,73 @@
     <h2 class="font-open font-bold text-4xl text-zinc-50 text-center leading-12">Gestão Nina Silva:
         POR UMA GESTÃO INCLUSIVA E
         ANTI-RACISTA!</h2>
-    <img src="assets\branco.jpg" alt="imagem de fundo branco" class="w-full h-auto mt-5">
-    <p class="font-open text-base text-zinc-50 text-justify
+
+    <div class="mt-5 rounded-2xl overflow-hidden bg-[#D4D4D4]">
+        <img src="assets/costanina.png" alt="Foto de Nina Silva" fill priority class="object-cover w-full">
+    </div>
+
+    <p class="font-open text-base font-semibold text-zinc-50 text-justify
 mt-5 ">Acreditamos na importância de construir um ambiente acadêmico
         inclusivo e anti-racista, para acolher e representar os alunos do Bacharelado Interdisciplinar em Ciências e
         Teconologia, IHAC -UFBA.</p>
-        <p class="font-open text-base text-zinc-50 font-bold text-center mt-5 ">Gestão 2025/2026</p>
+    <p class="font-open text-base text-zinc-50 font-bold text-center my-8 ">Gestão 2025/2026</p>
+    <div class="rounded-3xl mt-5 shadow-my border-5 border-purple-950 p-5">
+        <p class="font-open text-base text-zinc-50 text-justify  font-bold">
+            A nossa gestão inspira-se na trajetória da Nina Silva uma executiva premiada, fundadora do Movimento Black
+            Money. Nós queremos trazer para o nosso curso uma mudança de perspectiva de quem ocupa espaço na tecnologia,
+            historicamente a ciência e a tecnologia têm sido espaços onde a genialidade de mulheres negras é
+            invisibilizada, dando palco para homens brancos cisgêneros. Temos como objetivo, romper esse paradigma,
+            justamente trazendo uma das mulheres mais influentes no ramo da tecnologia, Nina Silva. Trazemos o nome de
+            Nina não apenas como homenagem, mas como um compromisso de luta. O CACET assume a missão de combater a
+            evasão e garantir que nenhuma estudate desista por falta de acolhimento. Queremos ser a rede de apoio que
+            impulsiona talentos, destaca o progonismo negro e oferece o suporte acadêmico necessário para que todos
+            construam a universidade que merecem.
+        </p>
+        <button type="button"
+            class="rounded-2xl font-open bg-blue-clear p-2.5 text-sm font-semibold  text-zinc-950 shadow-xs hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue mt-5 cursor-pointer">
+            Conheça mais mulheres negras na tecnologia
+        </button>
+    </div>
+</section>
+<section class="bg-medium p-10">
+    <h2 class="font-bold text-3xl text-zinc-50 font-open text-center leading-11">Conheça nossos objetivos</h2>
+    <div class="flex flex-col gap-5 items-center mt-16">
+        <app-objetivos title="Representatividade"
+            description="Nosso compromisso é garantir que todas as vozes do B.I. Especialmente as historicamente silenciadas sejam ouvidas e tenham poder de decisão nas pautas da universidade."
+            backgroundColor="#610FB0" color_title="text-zinc-50" color_description="text-zinc-50"
+            imageSrc="assets/representatividade.png"
+            imageAlt="Ilustração de um rosto fragmentado em vários pedaços de diferentes tons de pele, simbolizando a diversidade e a representatividade."></app-objetivos>
+
+        <app-objetivos title="Transição BI - CPL"
+            description="A passagem do Bacharelado Interdisciplinar para o curso específico (CPL) não deve ser um pesadelo. Atuaremos na fiscalização de vagas e na redução da burocracia, lutando por uma transição mais justa, transparaente e sem obstáculos."
+            backgroundColor="#34B1FB" color_title="text-zinc-950" color_description="text-zinc-950"
+            imageSrc="assets/transicao.png"></app-objetivos>
+
+        <app-objetivos title="Conexão Profissional"
+            description="Queremos encurtar a distância entre a sala de aula e o futuro. Promoveremos workshops, palestras e rodas de conversa com profissionais atuantes na tecnologia e ciência, criando pontes reais para a carreira dos estudantes."
+            backgroundColor="#610FB0" color_title="text-zinc-50" color_description="text-zinc-50"
+            imageSrc="assets/conexao.png"></app-objetivos>
+
+        <app-objetivos title="Suporte e Comunicação"
+            description="Criaremos canais de comunicação ágeis para tirar dúvidas, resolver problemas acadêmicos e oferecer suporte pedagógico, garantindo que todo estudante se sinta amparado durante a graduação."
+            backgroundColor="#34B1FB" color_title="text-zinc-950" color_description="text-zinc-950"
+            imageSrc="assets/suporte.png"></app-objetivos>
+
+    </div>
+
+</section>
+<section class="bg-clear p-10">
+    <h2 class="font-bold text-4xl text-zinc-950 font-open text-center leading-11">Nossos Membros</h2>
+    <p class="font-bold text-xl font-open text-zinc-950 mt-16 text-center">Conheça quem está participando desta gestão e
+        fazendo a diferença</p>
+    <div class="flex flex-col gap-5 items-center mt-16">
+        <app-membros diretoria="Diretoria" name="Nome" role="Cargo" photoUrl=""></app-membros>
+
+        <app-membros diretoria="Diretoria" name="Nome" role="Cargo" photoUrl=""></app-membros>
+
+        <app-membros diretoria="Diretoria" name="Nome" role="Cargo" photoUrl=""></app-membros>
+
+        <app-membros diretoria="Diretoria" name="Nome" role="Cargo" photoUrl=""></app-membros>
+    </div>
+
 </section>

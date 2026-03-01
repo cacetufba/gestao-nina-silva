@@ -9,5 +9,6 @@
   --color-medium: #A06FD0;
   --color-clear: #D0B7E7;
   --color-blue: #0074B8;
-  --color-blue-clear: #34B1FB 
+  --color-blue-clear: #34B1FB;
+  --shadow-my: 15px 15px 15px 0px #47117B;
 }
