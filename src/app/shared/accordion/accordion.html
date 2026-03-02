@@ -1,0 +1,17 @@
+<details class="group w-full border-2 transition-all duration-300" [style.backgroundColor]="backgroundColor()"
+    [style.boxShadow]="dynamicShadow()" [style.borderColor]="shadowColor()">
+    <summary
+        class="flex items-center justify-between py-1 px-5 cursor-pointer list-none font-bold text-base focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white/30 font-open"
+        [style.color]="textColor()">
+        <span>{{ label() }}</span>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none"
+            class="w-10 h-10 transition-transform duration-300 group-open:rotate-180" [style.fill]="textColor()">
+            <path d="M24 30.7999L12 18.7999L14.15 16.6499L24 26.4999L33.85 16.6499L36 18.7999L24 30.7999Z" />
+        </svg>
+    </summary>
+
+    <div class="pl-5 pb-3" [style.color]="textColor()">
+        <ng-content />
+    </div>
+</details>
