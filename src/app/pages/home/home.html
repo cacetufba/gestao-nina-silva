@@ -1,5 +1,5 @@
-<section class="bg-dark p-10">
-    <h2 class="font-open font-bold text-4xl text-zinc-50 text-center leading-12">Gestão Nina Silva:
+<section class="bg-dark p-10 relative pb-110 sm:pb-60">
+    <h2 class="font-open font-bold text-4xl text-zinc-50 text-center leading-12">Gestão Nina Silva: <br>
         POR UMA GESTÃO INCLUSIVA E
         ANTI-RACISTA!</h2>
 
@@ -11,8 +11,13 @@
 mt-5 ">Acreditamos na importância de construir um ambiente acadêmico
         inclusivo e anti-racista, para acolher e representar os alunos do Bacharelado Interdisciplinar em Ciências e
         Teconologia, IHAC -UFBA.</p>
-    <p class="font-open text-base text-zinc-50 font-bold text-center my-8 ">Gestão 2025/2026</p>
-    <div class="rounded-3xl mt-5 shadow-my border-5 border-purple-950 p-5">
+    <p class="font-open text-base text-zinc-50 font-bold text-center my-8  sm:text-2xl">Gestão 2025/2026</p>
+
+
+</section>
+<div class="relative z-20 h-0 flex justify-center items-center">
+    <div
+        class="absolute w-[85%] rounded-3xl shadow-my border-5 border-purple-950 p-6 bg-dark flex flex-col items-center">
         <p class="font-open text-base text-zinc-50 text-justify  font-bold">
             A nossa gestão inspira-se na trajetória da Nina Silva uma executiva premiada, fundadora do Movimento Black
             Money. Nós queremos trazer para o nosso curso uma mudança de perspectiva de quem ocupa espaço na tecnologia,
@@ -25,14 +30,16 @@ mt-5 ">Acreditamos na importância de construir um ambiente acadêmico
             construam a universidade que merecem.
         </p>
         <button type="button"
-            class="rounded-2xl font-open bg-blue-clear p-2.5 text-sm font-semibold  text-zinc-950 shadow-xs hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue mt-5 cursor-pointer">
+            class="rounded-2xl font-open bg-blue-clear p-2.5 text-sm font-semibold  text-zinc-950 shadow-xs hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue mt-5 cursor-pointer sm:self-end">
             Conheça mais mulheres negras na tecnologia
         </button>
     </div>
-</section>
-<section class="bg-medium p-10">
-    <h2 class="font-bold text-3xl text-zinc-50 font-open text-center leading-11">Conheça nossos objetivos</h2>
-    <div class="flex flex-col gap-5 items-center mt-16">
+</div>
+
+
+<section class="bg-medium p-10 pt-115 sm:px-20 sm:pt-80 md:pt-60">
+    <h2 class="font-bold text-3xl text-zinc-50 font-open text-center leading-11 sm:text-4xl">Conheça nossos objetivos</h2>
+    <div class="grid grid-cols-1 gap-5 justify-items-center mt-16 sm:grid-cols-2 lg:grid-cols-4 lg:gap-0">
         <app-objetivos title="Representatividade"
             description="Nosso compromisso é garantir que todas as vozes do B.I. Especialmente as historicamente silenciadas sejam ouvidas e tenham poder de decisão nas pautas da universidade."
             backgroundColor="#610FB0" color_title="text-zinc-50" color_description="text-zinc-50"
@@ -58,10 +65,10 @@ mt-5 ">Acreditamos na importância de construir um ambiente acadêmico
 
 </section>
 <section class="bg-clear p-10">
-    <h2 class="font-bold text-4xl text-zinc-950 font-open text-center leading-11">Nossos Membros</h2>
-    <p class="font-bold text-xl font-open text-zinc-950 mt-16 text-center">Conheça quem está participando desta gestão e
+    <h2 class="font-bold text-4xl text-zinc-950 font-open text-center leading-11 sm:text-4xl">Nossos Membros</h2>
+    <p class="font-bold text-xl font-open text-zinc-950 mt-16 text-center sm:text-left">Conheça quem está participando desta gestão e
         fazendo a diferença</p>
-    <div class="flex flex-col gap-5 items-center mt-16">
+    <div class="grid grid-cols-1 gap-5 justify-items-center items-center mt-16 sm:grid-cols-2 lg:grid-cols-4 lg:gap-0">
         <app-membros diretoria="Diretoria" name="Nome" role="Cargo" photoUrl=""></app-membros>
 
         <app-membros diretoria="Diretoria" name="Nome" role="Cargo" photoUrl=""></app-membros>
@@ -72,23 +79,26 @@ mt-5 ">Acreditamos na importância de construir um ambiente acadêmico
     </div>
 
 </section>
-<section class="bg-medium p-5 py-20">
-     <h2 class="font-bold text-3xl mb-14 text-zinc-50 font-open text-center leading-11 ">Dúvidas Frequentes</h2>
-    
-     <div class="flex flex-col gap-7">
-            <app-accordion label="O que é o BICT?" backgroundColor="#34B1FB" textColor="#000" shadowColor="#0074B8">
-        <p class=" font-open">
-            O Bacharelado Interdisciplinar em Ciência e Tecnologia (BIC&T) é um curso de graduação oferecido pela Universidade
-            Federal da Bahia (UFBA).
-        </p>
-    </app-accordion>
+<section class="bg-medium px-5 py-20 sm:px-20">
+    <h2 class="font-bold text-3xl mb-14 text-zinc-50 font-open text-center leading-11 sm:text-4xl">Dúvidas Frequentes</h2>
 
-      <app-accordion label="O que são horas complementares?" backgroundColor="#610FB0" textColor="white" shadowColor="#4E1782">
-        <p class=" font-open">
-            O Bacharelado Interdisciplinar em Ciência e Tecnologia (BIC&T) é um curso de graduação oferecido pela Universidade
-            Federal da Bahia (UFBA).
-        </p>
-    </app-accordion>
-     </div>
+    <div class="flex flex-col gap-7">
+        <app-accordion label="O que é o BICT?" backgroundColor="#34B1FB" textColor="#000" shadowColor="#0074B8">
+            <p class=" font-open">
+                O Bacharelado Interdisciplinar em Ciência e Tecnologia (BIC&T) é um curso de graduação oferecido pela
+                Universidade
+                Federal da Bahia (UFBA).
+            </p>
+        </app-accordion>
+
+        <app-accordion label="O que são horas complementares?" backgroundColor="#610FB0" textColor="white"
+            shadowColor="#4E1782">
+            <p class=" font-open">
+                O Bacharelado Interdisciplinar em Ciência e Tecnologia (BIC&T) é um curso de graduação oferecido pela
+                Universidade
+                Federal da Bahia (UFBA).
+            </p>
+        </app-accordion>
+    </div>
 
 </section>
