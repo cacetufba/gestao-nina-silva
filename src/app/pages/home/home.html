@@ -1,17 +1,34 @@
-<section class="bg-dark p-10 relative pb-110 sm:pb-60">
-    <h2 class="font-open font-bold text-4xl text-zinc-50 text-center leading-12">Gestão Nina Silva: <br>
+<section class="bg-dark p-10 relative pb-110 sm:pb-80 grid gap-4 justify-items-center  xl:grid-cols-2 xl:px-20 xl:gap-0 xl:pt-24 
+">
+    <div class="hidden xl:block">
+        <h2 class="font-open font-bold text-6xl text-zinc-50 text-left leading-20 ">Gestão Nina Silva: <br>
+            POR UMA GESTÃO <br> INCLUSIVA E <br>
+            ANTI-RACISTA!</h2>
+
+
+        <p class="font-open text-base font-semibold text-zinc-50 mt-5 text-justify sm:text-xl">Acreditamos na importância de
+            construir um
+            ambiente acadêmico
+            inclusivo e anti-racista, para acolher e representar os alunos do Bacharelado Interdisciplinar em Ciências e
+            Teconologia, IHAC -UFBA.</p>
+        <p class="font-open text-base text-zinc-50 font-bold mt-5 text-center sm:text-2xl ">Gestão 2025/2026</p>
+    </div>
+
+    <h2 class="font-open font-bold text-4xl text-zinc-50 text-center leading-12 xl:hidden">Gestão Nina Silva: <br>
         POR UMA GESTÃO INCLUSIVA E
         ANTI-RACISTA!</h2>
 
-    <div class="mt-5 rounded-2xl overflow-hidden bg-[#D4D4D4]">
-        <img src="assets/costanina.png" alt="Foto de Nina Silva" fill priority class="object-cover w-full">
-    </div>
 
-    <p class="font-open text-base font-semibold text-zinc-50 text-justify
-mt-5 ">Acreditamos na importância de construir um ambiente acadêmico
+    <img src="assets/costanina.png" alt="Foto de Nina Silva" fill priority
+        class="max-inline-100 block-auto object-contain bg-[#D4D4D4] rounded-5xl xl:justify-self-end">
+
+    <p class="font-open text-base font-semibold text-zinc-50 text-justify sm:text-xl xl:hidden">Acreditamos na
+        importância de
+        construir um
+        ambiente acadêmico
         inclusivo e anti-racista, para acolher e representar os alunos do Bacharelado Interdisciplinar em Ciências e
         Teconologia, IHAC -UFBA.</p>
-    <p class="font-open text-base text-zinc-50 font-bold text-center my-8  sm:text-2xl">Gestão 2025/2026</p>
+    <p class="font-open text-base text-zinc-50 font-bold text-center sm:text-2xl xl:hidden ">Gestão 2025/2026</p>
 
 
 </section>
@@ -30,7 +47,7 @@ mt-5 ">Acreditamos na importância de construir um ambiente acadêmico
             construam a universidade que merecem.
         </p>
         <button type="button"
-            class="rounded-2xl font-open bg-blue-clear p-2.5 text-sm font-semibold  text-zinc-950 shadow-xs hover:bg-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue mt-5 cursor-pointer sm:self-end">
+            class="rounded-2xl font-open bg-blue-clear p-2.5 text-sm font-semibold  text-zinc-950 shadow-xs hover:bg-blue hover:text-zinc-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue mt-5 cursor-pointer sm:self-end">
             Conheça mais mulheres negras na tecnologia
         </button>
     </div>
@@ -38,8 +55,9 @@ mt-5 ">Acreditamos na importância de construir um ambiente acadêmico
 
 
 <section class="bg-medium p-10 pt-115 sm:px-20 sm:pt-80 md:pt-60">
-    <h2 class="font-bold text-3xl text-zinc-50 font-open text-center leading-11 sm:text-4xl">Conheça nossos objetivos</h2>
-    <div class="grid grid-cols-1 gap-5 justify-items-center mt-16 sm:grid-cols-2 lg:grid-cols-4 lg:gap-0">
+    <h2 class="font-bold text-3xl text-zinc-50 font-open text-center leading-11 sm:text-4xl">Conheça nossos objetivos
+    </h2>
+    <div class="grid grid-cols-1 gap-5 justify-items-center mt-16 sm:grid-cols-2 lg:grid-cols-4">
         <app-objetivos title="Representatividade"
             description="Nosso compromisso é garantir que todas as vozes do B.I. Especialmente as historicamente silenciadas sejam ouvidas e tenham poder de decisão nas pautas da universidade."
             backgroundColor="#610FB0" color_title="text-zinc-50" color_description="text-zinc-50"
@@ -66,7 +84,8 @@ mt-5 ">Acreditamos na importância de construir um ambiente acadêmico
 </section>
 <section class="bg-clear p-10">
     <h2 class="font-bold text-4xl text-zinc-950 font-open text-center leading-11 sm:text-4xl">Nossos Membros</h2>
-    <p class="font-bold text-xl font-open text-zinc-950 mt-16 text-center sm:text-left">Conheça quem está participando desta gestão e
+    <p class="font-bold text-xl font-open text-zinc-950 mt-16 text-center sm:text-left">Conheça quem está participando
+        desta gestão e
         fazendo a diferença</p>
     <div class="grid grid-cols-1 gap-5 justify-items-center items-center mt-16 sm:grid-cols-2 lg:grid-cols-4 lg:gap-0">
         <app-membros diretoria="Diretoria" name="Nome" role="Cargo" photoUrl=""></app-membros>
@@ -80,7 +99,8 @@ mt-5 ">Acreditamos na importância de construir um ambiente acadêmico
 
 </section>
 <section class="bg-medium px-5 py-20 sm:px-20">
-    <h2 class="font-bold text-3xl mb-14 text-zinc-50 font-open text-center leading-11 sm:text-4xl">Dúvidas Frequentes</h2>
+    <h2 class="font-bold text-3xl mb-14 text-zinc-50 font-open text-center leading-11 sm:text-4xl">Dúvidas Frequentes
+    </h2>
 
     <div class="flex flex-col gap-7">
         <app-accordion label="O que é o BICT?" backgroundColor="#34B1FB" textColor="#000" shadowColor="#0074B8">
