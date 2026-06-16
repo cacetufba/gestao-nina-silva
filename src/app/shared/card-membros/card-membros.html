@@ -1,5 +1,5 @@
 <!-- MOBILE -->
-<div class="md:hidden">
+<div class="font-open md:hidden">
 
   @for (membro of membrosMobile(); track membro.nome; let i = $index) {
 
@@ -27,7 +27,7 @@
 
   }
 
-  <div class="flex justify-center items-center gap-4 mt-6 mb-6">
+  <div class="flex justify-center items-center gap-4 mt-6 mb-6 font-open">
 
     <button
       type="button"
@@ -58,7 +58,7 @@
 </div>
 
 <!-- TABLET E DESKTOP -->
-<div class="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-4 m-30">
+<div class="font-open hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-4 m-30">
 
   @for (membro of membrosFiltrados(); track membro.nome) {
 

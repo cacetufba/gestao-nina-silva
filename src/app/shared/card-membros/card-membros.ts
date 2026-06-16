@@ -134,6 +134,27 @@ export class CardMembros {
       area: 'comunicacao',
       foto: 'assets/lucasA.jpeg',
     },
+
+        {
+      nome: 'Henrique Batista',
+      cargo: 'Design',
+      area: 'comunicacao',
+      foto: 'assets/henrique.jpeg',
+    },
+
+        {
+      nome: 'Milena Barbosa',
+      cargo: 'Social Mídia',
+      area: 'comunicacao',
+      foto: 'assets/milena.jpeg',
+    },
+
+        {
+      nome: 'Ingrid Chamusca',
+      cargo: 'Social Mídia',
+      area: 'comunicacao',
+      foto: 'assets/ingrid.jpeg',
+    },
   ];
 
   readonly membrosFiltrados = computed(() => {
