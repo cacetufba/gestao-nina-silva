@@ -1,0 +1,76 @@
+<div class="flex flex-col items-center my-10">
+    <h1 class="font-open text-dark text-xl font-bold inline-block">
+        Mais referências para conhecer
+        <hr class="border-5 border-blue-clear rounded-xl w-auto" />
+    </h1>
+</div>
+
+
+<div>
+    <!-- Slide atual com grid de 3 cards -->
+    <div>
+        @for (card of slideAtual().cards; track card.id) {
+        <div class="mt-6">
+            <h2
+                class="card-titulo bg-dark text-white px-10 py-1    rounded-e-xl     text-xl leading-none w-auto inline font-open ">
+                {{ card.nome }}</h2>
+            <div class="mx-5">
+                <h3 class="font-bold font-open text-base mb-2.5 my-3">Quem foi {{card.nome}}?</h3>
+                <p class="font-open text-sm"> {{card.descricao1}} </p>
+                <h3 class="font-bold font-open text-base mb-2.5 my-5">Importância</h3>
+                <div>
+                    <img [src]="card.imagemUrl" [alt]="card.nome" class="float-right w-44" />
+                    <p class="font-open text-sm">{{ card.descricao2 }}</p>
+                </div>
+
+            </div>
+        </div>
+        }
+    </div>
+
+    <!-- Botões de navegação entre slides -->
+    <div class="botoes-navegacao flex items-center justify-center gap-4 w-full">
+        <button type="button"
+            class=" text-gray-800 cursor-pointer hover:text-gray-600 transition-colors duration-200 disabled:opacity-30 disabled:cursor-not-allowed focus:outline-none text-xl font-bold"
+            (click)="slideAnterior()" [disabled]="!temAnterior()" aria-label="Slide anterior">
+            <svg width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0.48795 11.785L9.91628 21.2133L12.2729 18.8567L4.02295 10.6067L12.2729 2.35667L9.91628 0L0.48795 9.42833C0.175498 9.74088 -2.76566e-05 10.1647 -2.76566e-05 10.6067C-2.76566e-05 11.0486 0.175498 11.4725 0.48795 11.785Z"
+                    fill="black" />
+            </svg>
+
+        </button>
+
+        <!-- Footer com números dos SLIDES  -->
+        <div class="flex items-center gap-3" role="tablist" aria-label="Navegação do carrossel de slides">
+            @for (slide of slidesData(); track slide.id) {
+            <button type="button" class=" text-base cursor-pointer font-medium transition-colors duration-200 focus:outline-none
+                   {{ $index === indiceAtual() 
+                      ? 'text-black font-bold' 
+                      : 'text-gray-400 hover:text-gray-600' }}" [class.ativo]="$index === indiceAtual()"
+                (click)="irParaSlide($index)" [attr.aria-label]="'Ir para slide ' + ($index + 1)"
+                [attr.aria-selected]="$index === indiceAtual()" role="tab">
+                {{ ($index + 1) | number:'2.0-0' }}
+            </button>
+            }
+        </div>
+
+        <button type="button"
+            class="cursor-pointer text-gray-800 hover:text-gray-600 transition-colors duration-200 disabled:opacity-30 disabled:cursor-not-allowed focus:outline-none text-xl font-bold"
+            (click)="proximoSlide()" [disabled]="!temProximo()" aria-label="Próximo slide">
+            <svg width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M11.785 11.785L2.35667 21.2133L0 18.8567L8.25 10.6067L0 2.35667L2.35667 0L11.785 9.42833C12.0975 9.74088 12.273 10.1647 12.273 10.6067C12.273 11.0486 12.0975 11.4725 11.785 11.785Z"
+                    fill="black" />
+            </svg>
+
+        </button>
+    </div>
+
+
+    <!-- Status para leitores de tela -->
+    <div class="sr-only" aria-live="polite" aria-atomic="true">
+        Slide {{ numeroFormatado() }} de {{ totalSlides() }} com 3 cards cada
+    </div>
+
+</div>
