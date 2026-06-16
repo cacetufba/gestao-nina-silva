@@ -3,10 +3,11 @@ import {
 } from '@angular/core';
 
 import { NgOptimizedImage } from '@angular/common';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-membros',
-  imports: [NgOptimizedImage],
+  imports: [NgOptimizedImage , RouterLink],
   templateUrl: './membros.html',
   styleUrl: './membros.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
