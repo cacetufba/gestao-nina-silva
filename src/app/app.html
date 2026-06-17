@@ -1,44 +1,67 @@
 <main>
-  <header class="bg-dark p-5 mb-1">
+  <header class="bg-dark p-5 mb-1 relative">
+    <details class="absolute top-0 left-0 z-100 pl-14 pt-7 rounded-br-lg">
+      <summary class="flex items-center justify-between cursor-pointer list-none p-2 transition-colors duration-300">
+        <img src="assets/icon-hamburguer.png" class="w-auto" alt="ícone do menu">
+      </summary>
+
+      <!-- Menu com fundo azul e sobreposição total -->
+      <div class="menu-content flex-col bg-blue-clear w-60 px-10 py-8 rounded-br-lg">
+        <a href="#gestao" class="px-4 py-3 text-zinc-50  hover:bg-blue-700 rounded-t-lg transition-colors font-open text-2xl">Gestão</a>
+        <a href="#objetivos" class="px-4 py-3 text-zinc-50  hover:bg-blue-700 transition-colors font-open text-2xl">Objetivos</a>
+        <a href="#membros" class="px-4 py-3 text-zinc-50  hover:bg-blue-700 transition-colors font-open text-2xl">Membros</a>
+        <a href="#contatos" class="px-4 py-3 text-zinc-50  hover:bg-blue-700 rounded-b-lg transition-colors font-open text-2xl">Contatos</a>
+      </div>
+    </details>
     <h1 class="text-zinc-50 font-open font-bold text-sm text-center mb-1 md:text-2xl">CACET - UFBA</h1>
     <h2 class="text-zinc-50 font-open text-sm text-center md:text-xl">Centro acadêmico de Ciência e Tecnologia</h2>
   </header>
   <router-outlet />
-  <footer class="bg-dark  p-5 ">
+  <footer id="contatos" class="bg-dark  p-5 ">
     <div class="flex gap-10 justify-center">
-    <a class="flex gap-1  items-center" href="https://www.instagram.com/cacetufba/" target="_blank" rel="noopener noreferrer">
-      <img src="assets/IConinstagram.png" class="w-auto h-9" alt="ícone branco de instagram">
-      <p class="text-zinc-50 font-open font-bold sm:text-2xl">cacetufba</p>
-    </a>
-    <a class="flex gap-1 items-center" href="https://maps.app.goo.gl/SX2cDkYE9UdzRXWe7" target="_blank" rel="noopener noreferrer">
-      <img src="assets/IconLocalização.png" class="w-auto h-10" alt="ícone branco de localização">
-      <p class="text-zinc-50 font-open font-bold sm:text-2xl">Prédio do IHAC - sala 104</p>
-    </a>
+      <a class="flex gap-1  items-center" href="https://www.instagram.com/cacetufba/" target="_blank"
+        rel="noopener noreferrer">
+        <img src="assets/IConinstagram.png" class="w-auto h-9" alt="ícone branco de instagram">
+        <p class="text-zinc-50 font-open font-bold sm:text-2xl">cacetufba</p>
+      </a>
+      <a class="flex gap-1 items-center" href="https://maps.app.goo.gl/SX2cDkYE9UdzRXWe7" target="_blank"
+        rel="noopener noreferrer">
+        <img src="assets/IconLocalização.png" class="w-auto h-10" alt="ícone branco de localização">
+        <p class="text-zinc-50 font-open font-bold sm:text-2xl">Prédio do IHAC - sala 104</p>
+      </a>
     </div>
 
     <div class="flex  mt-5 md:ml-10 justify-evenly">
-      <div class="flex   md:gap-1 items-center" >
-      <p class="text-zinc-50 font-open font-bold text-xs lg:text-base">Desenvolvido por Andresa Fernandes:</p>
-      
-      <a  href="https://www.linkedin.com/in/andresa-fernandes-9271ba1ba?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer"> <img src="assets/linkedin.png" class="w-5 h-5  lg:ml-2" alt="ícone branco de localização"></a>
-     <a  href=" andresa.ifba@gmail.com" target="_blank" rel="noopener noreferrer"> <img src="assets/e-mail.png" class="w-5  h-5 md:ml-2 mr-2" alt="ícone branco de localização"></a>
+      <div class="flex   md:gap-1 items-center">
+        <p class="text-zinc-50 font-open font-bold text-xs lg:text-base">Desenvolvido por Andresa Fernandes:</p>
+
+        <a href="https://www.linkedin.com/in/andresa-fernandes-9271ba1ba?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+          target="_blank" rel="noopener noreferrer"> <img src="assets/linkedin.png" class="w-5 h-5  lg:ml-2"
+            alt="ícone branco de localização"></a>
+        <a href=" andresa.ifba@gmail.com" target="_blank" rel="noopener noreferrer"> <img src="assets/e-mail.png"
+            class="w-5  h-5 md:ml-2 mr-2" alt="ícone branco de localização"></a>
       </div>
       <div class="flex  items-center md:gap-1">
-      <p class="text-zinc-50 font-open font-bold text-xs lg:text-base">Andreza Moreira:</p>
-      
-      <a  href="https://www.linkedin.com/in/andreza-moreira?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer"> <img src="assets/linkedin.png" class="w-5 h-5 lg:ml-2" alt="ícone branco de localização"></a>
-     <a  href="andrezamor3ira@gmail.com" target="_blank" rel="noopener noreferrer"> <img src="assets/e-mail.png" class="w-5 h-5 md:ml-2 mr-2 " alt="ícone branco de localização"></a>
+        <p class="text-zinc-50 font-open font-bold text-xs lg:text-base">Andreza Moreira:</p>
+
+        <a href="https://www.linkedin.com/in/andreza-moreira?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+          target="_blank" rel="noopener noreferrer"> <img src="assets/linkedin.png" class="w-5 h-5 lg:ml-2"
+            alt="ícone branco de localização"></a>
+        <a href="andrezamor3ira@gmail.com" target="_blank" rel="noopener noreferrer"> <img src="assets/e-mail.png"
+            class="w-5 h-5 md:ml-2 mr-2 " alt="ícone branco de localização"></a>
       </div>
-       
-      
+
+
       <div class="flex  items-center md:gap-1 ">
-      <p class="text-zinc-50 font-open font-bold text-xs lg:text-base">Lucas Alves:</p>
-      
-      <a  href="https://www.linkedin.com/in/lucasac-dev/" target="_blank" rel="noopener noreferrer"> <img src="assets/linkedin.png" class="w-5 h-5 lg:ml-2" alt="ícone branco de localização"></a>
-     <a  href="" target="_blank" rel="noopener noreferrer"> <img src="assets/e-mail.png" class="w-5  h-5 md:ml-2 mr-2" alt="ícone branco de localização"></a>
+        <p class="text-zinc-50 font-open font-bold text-xs lg:text-base">Lucas Alves:</p>
+
+        <a href="https://www.linkedin.com/in/lucasac-dev/" target="_blank" rel="noopener noreferrer"> <img
+            src="assets/linkedin.png" class="w-5 h-5 lg:ml-2" alt="ícone branco de localização"></a>
+        <a href="" target="_blank" rel="noopener noreferrer"> <img src="assets/e-mail.png" class="w-5  h-5 md:ml-2 mr-2"
+            alt="ícone branco de localização"></a>
       </div>
     </div>
-    
+
 
   </footer>
 </main>
