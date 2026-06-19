@@ -82,7 +82,7 @@ export class CardMembros {
     },
     {
       nome: 'Andreza Moreira',
-      cargo: 'Comunicação',
+      cargo: 'Design',
       area: 'comunicacao',
       foto: 'assets/WhatsApp Image 2026-02-23 at 13.43.22 1.png',
     },
@@ -123,14 +123,14 @@ export class CardMembros {
     
          {
       nome: 'Andresa Fernandes',
-      cargo: 'Design',
+      cargo: 'Desenvolvedora',
       area: 'comunicacao',
       foto: 'assets/andresa.jpeg',
     },
 
         {
       nome: 'Lucas Alves',
-      cargo: 'Design',
+      cargo: 'Desenvolvedor',
       area: 'comunicacao',
       foto: 'assets/lucasA.jpeg',
     },
@@ -155,6 +155,13 @@ export class CardMembros {
       area: 'comunicacao',
       foto: 'assets/ingrid.jpeg',
     },
+
+         {
+      nome: 'Maria Luíza',
+      cargo: 'Social Mídia',
+      area: 'comunicacao',
+      foto: 'assets/maria.jpeg',
+    }
   ];
 
   readonly membrosFiltrados = computed(() => {
