@@ -1,0 +1,26 @@
+    /* Estilos para controlar o fundo azul apenas quando aberto */
+    details[open]{
+         background-color: #34B1FB !important;
+    }
+
+    details[open] summary {
+        background-color: #34B1FB !important;
+    }
+
+    details:not([open]) summary {
+        background-color: transparent;
+    }
+
+    /* Transição suave */
+    details summary {
+        transition: background-color 0.3s ease;
+    }
+
+    /* Estilo do menu quando aberto */
+    details[open] .menu-content {
+        display: flex;
+    }
+
+    details:not([open]) .menu-content {
+        display: none;
+    }
