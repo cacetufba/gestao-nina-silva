@@ -25,100 +25,6 @@ export class CardMembros {
   readonly filtro = input<Area>(null);
 
   readonly membros: Membro[] = [
-    
-         {
-      nome: 'Darwin Sògbò',
-      cargo: 'Gestor de Comunicação',
-      area: 'diretoria',
-      foto: 'assets/darwin.jpg',
-    },
-
-     {
-      nome: 'Breno Vinicius',
-      cargo: 'Coordenador de Cultura e Eventos',
-      area: 'diretoria',
-      foto: 'assets/breno.jpg',
-    },
-
-       {
-      nome: 'Bruno Rios',
-      cargo: 'Vice-Coordenador de Cultura e Eventos',
-      area: 'diretoria',
-      foto: 'assets/bruno.jpg',
-    },
-
-    
-      {
-      nome: 'Vitória Araújo',
-      cargo: 'Secretária',
-      area: 'diretoria',
-      foto: 'assets/vitoria.jpg',
-    },
-
-     {
-      nome: 'Emilly Sancho',
-      cargo: 'Vice-Secretária',
-      area: 'diretoria',
-      foto: 'assets/emilly.jpg',
-    },
-
-    {
-      nome: 'Igor Leal',
-      cargo: 'Coordenador',
-      area: 'diretoria',
-      foto: 'assets/Igor.jpg',
-    },
-    {
-      nome: 'Julia Gouveia',
-      cargo: 'Social Mídia',
-      area: 'comunicacao',
-      foto: 'assets/image 1.png',
-    },
-    {
-      nome: 'Jeniffer',
-      cargo: 'Social Mídia',
-      area: 'comunicacao',
-      foto: 'assets/image 2.png',
-    },
-    {
-      nome: 'Andreza Moreira',
-      cargo: 'Design',
-      area: 'comunicacao',
-      foto: 'assets/WhatsApp Image 2026-02-23 at 13.43.22 1.png',
-    },
-    {
-      nome: 'Lucas',
-      cargo: 'Relações Institucionais',
-      area: 'relacoes',
-      foto: 'assets/lucas.jpeg',
-    },
-    {
-      nome: 'Márcia',
-      cargo: 'Cultura e Eventos',
-      area: 'cultura',
-      foto: 'assets/marcia.jpeg',
-    },
-    {
-      nome: 'Zahur',
-      cargo: 'Cultura e Eventos',
-      area: 'cultura',
-      foto: 'assets/zahur.jpeg',
-    },
-    {
-      nome: 'Yuri Lucas',
-      cargo: 'Cultura e Eventos',
-      area: 'cultura',
-      foto: 'assets/yuri.jpeg',
-    },
-
-
-    
-         {
-      nome: 'Rafael',
-      cargo: 'Comunicação',
-      area: 'comunicacao',
-      foto: 'assets/rafael.jpg',
-    },
 
     
          {
@@ -128,40 +34,139 @@ export class CardMembros {
       foto: 'assets/andresa.jpeg',
     },
 
-        {
-      nome: 'Lucas Alves',
-      cargo: 'Desenvolvedor',
+    {
+      nome: 'Andreza Moreira',
+      cargo: 'Design',
       area: 'comunicacao',
-      foto: 'assets/lucasA.jpeg',
+      foto: 'assets/WhatsApp Image 2026-02-23 at 13.43.22 1.png',
     },
 
-        {
+      {
+      nome: 'Breno Vinicius',
+      cargo: 'Coordenador de Cultura e Eventos',
+      area: 'diretoria',
+      foto: 'assets/breno.jpg',
+    },
+
+    
+       {
+      nome: 'Bruno Rios',
+      cargo: 'Vice-Coordenador de Cultura e Eventos',
+      area: 'diretoria',
+      foto: 'assets/bruno.jpg',
+    },
+         {
+      nome: 'Darwin Sògbò',
+      cargo: 'Gestor de Comunicação',
+      area: 'diretoria',
+      foto: 'assets/darwin.jpg',
+    },
+
+     {
+      nome: 'Emilly Sancho',
+      cargo: 'Vice-Secretária',
+      area: 'diretoria',
+      foto: 'assets/emilly.jpg',
+    },
+
+       {
       nome: 'Henrique Batista',
       cargo: 'Design',
       area: 'comunicacao',
       foto: 'assets/henrique.jpeg',
     },
 
-        {
-      nome: 'Milena Barbosa',
-      cargo: 'Social Mídia',
-      area: 'comunicacao',
-      foto: 'assets/milena.jpeg',
+     {
+      nome: 'Igor Leal',
+      cargo: 'Coordenador',
+      area: 'diretoria',
+      foto: 'assets/Igor.jpg',
     },
 
-        {
+      {
       nome: 'Ingrid Chamusca',
       cargo: 'Social Mídia',
       area: 'comunicacao',
       foto: 'assets/ingrid.jpeg',
     },
 
-         {
+        {
+      nome: 'Jeniffer',
+      cargo: 'Social Mídia',
+      area: 'comunicacao',
+      foto: 'assets/image 2.png',
+    },
+    
+      {
+      nome: 'Julia Gouveia',
+      cargo: 'Social Mídia',
+      area: 'comunicacao',
+      foto: 'assets/image 1.png',
+    },
+
+      {
+      nome: 'Lucas',
+      cargo: 'Relações Institucionais',
+      area: 'relacoes',
+      foto: 'assets/lucas.jpeg',
+    },
+
+       {
+      nome: 'Lucas Alves',
+      cargo: 'Desenvolvedor',
+      area: 'comunicacao',
+      foto: 'assets/lucasA.jpeg',
+    },
+
+    {
+      nome: 'Márcia',
+      cargo: 'Cultura e Eventos',
+      area: 'cultura',
+      foto: 'assets/marcia.jpeg',
+    },
+
+       {
       nome: 'Maria Luíza',
       cargo: 'Social Mídia',
       area: 'comunicacao',
       foto: 'assets/maria.jpeg',
-    }
+    },
+
+       {
+      nome: 'Milena Barbosa',
+      cargo: 'Social Mídia',
+      area: 'comunicacao',
+      foto: 'assets/milena.jpeg',
+    },
+
+
+         {
+      nome: 'Rafael',
+      cargo: 'Comunicação',
+      area: 'comunicacao',
+      foto: 'assets/rafael.jpg',
+    },
+
+       {
+      nome: 'Vitória Araújo',
+      cargo: 'Secretária',
+      area: 'diretoria',
+      foto: 'assets/vitoria.jpg',
+    },
+
+     {
+      nome: 'Yuri Lucas',
+      cargo: 'Cultura e Eventos',
+      area: 'cultura',
+      foto: 'assets/yuri.jpeg',
+    },
+
+     {
+      nome: 'Zahur',
+      cargo: 'Cultura e Eventos',
+      area: 'cultura',
+      foto: 'assets/zahur.jpeg',
+    },
   ];
 
   readonly membrosFiltrados = computed(() => {
